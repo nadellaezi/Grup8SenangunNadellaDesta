@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <style>
+    .gambar_pln {
+      width: 80px;
+      height: 80px;
+    }
+
+    .container {
+      padding: 4%;
+      margin-top: 50px;
+      border-radius: 25px;
+      background-color: transparent;
+    }
+
+    .card {
+      padding: 1%;
+      /* background-color: black ; */
+      background-color: rgba(0, 0, 0, 0.5);
+      /* border: solid rgb(225, 225, 225); */
+      border-radius: 10px;
+      text-align: center;
+      /* background-color: black; */
+      /* opacity: 0.5; */
+    }
+
+    .spasi {
+      margin-bottom: 20px;
+    }
+
+    .inputan {
+      width: 300px;
+      height: 30px;
+      border: solid rgb(225, 225, 225);
+      background-color: transparent;
+      border-radius: 5px;
+      margin-left: 20px;
+      text-align: center;
+      color: rgb(225, 225, 225);
+      margin-bottom: 30px;
+    }
+
+    .back{
+        background-image: url("concert.jpg");
+    }
+
+    .label {
+      font-size: 25px;
+      margin-left: 20px;
+      color:rgb(225, 225, 225);
+      font-family: Arial, Helvetica, sans-serif;
+      display: inline-block;
+      width: 200px;
+      text-align: left;
+    }
+
+    .submit {
+      text-align: center;
+      height: 35px;
+      width: 140px;
+      border-radius: 5px;
+      background-color:rgb(225, 225, 225);
+      font-weight: bold;
+      color: black;
+      border: solid rgb(225, 225, 225);
+    }
+
+    .select {
+      width: 308px;
+      height: 35px;
+      border: solid rgb(225, 225, 225);
+      background-color: transparent;
+      border-radius: 5px;
+      color:rgb(225, 225, 225);
+      margin-left: 20px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .opt{
+        background-color: rgb(54, 54, 54);
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .judul {
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(225, 225, 225);
+    }
+
+    ::placeholder {
+      color:rgb(225, 225, 225);
+      opacity: 1; /* Firefox */
+    }
+    
+    ::-ms-input-placeholder { /* Edge 12-18 */
+      color :rgb(225, 225, 225);
+    }
+  </style>
+  <body class="back">
+    <div class="container">
+      <div class="card">
+        <div class="title">
+          <h1 class="judul">
+            TIKET KONSER TULUS
+          </h1>
+        </div>
+        <div>
+          <div class=" ">
+            <label class="label">Nama Pembeli</label>
+            <input class="inputan" placeholder="Masukkan nama pembeli" type="text"/>
+            <label class="label">Email</label>
+            <input class="inputan" placeholder="Masukkan email pembeli" type="email"/>
+          </div>
+          <div class=" ">
+            <label class="label">Nomer Telepon</label>
+            <input class="inputan" placeholder="Masukkan nomer telepon" type="number"/>
+            <label class="label">Alamat</label>
+            <input class="inputan" placeholder="Masukkan alamat pembeli" type="text"/>
+          </div>
+          <div class=" ">
+            <label class="label">Jumlah Tiket</label>
+            <input type="number" class="inputan" placeholder="Masukan jumlah tiket" type="number"/>
+            </select>
+            <label class="label">Jenis Tiket</label>
+            <select class="select" name="" id="">
+              <option class="opt" value="" hidden>Pilih jenis tiket</option>
+              <option class="opt" value="">Reguler - Rp. 175.000</option>
+              <option class="opt" value="">VIP - Rp. 250.000</option>
+            </select>
+          </div>
+          <div class=" ">
+            <label class="label">Ukuran Kaos</label>
+            <select class="select" name="" id="">
+              <option class="opt" value="" hidden>Pilih ukuran kaos</option>
+              <option class="opt" value="">S (L 40 - P 65)</option>
+              <option class="opt" value="">M (L 42 - P 67)</option>
+              <option class="opt" value="">L (L 44 - P 69)</option>
+              <option class="opt" value="">XL (L 46 - P 71)</option>
+              <option class="opt" value="">XXL (L 48 - P 73)</option>
+            </select>
+            <label class="label">Pilihan Makanan</label>
+            <select class="select" name="" id="">
+              <option class="opt" value="" hidden>Pilih makanan</option>
+              <option class="opt" value="">Bakso</option>
+              <option class="opt" value="">Nasi Goreng</option>
+              <option class="opt" value="">Ayam Geprek</option>
+              <option class="opt" value="">Mie ayam</option>
+            </select>
+          </div>
+          <div class=" ">
+            <label class="label">Tempat Duduk</label>
+              <select class="select" name="" id="">
+                <option class="opt" value="" hidden>Pilih Tempat Duduk</option>
+                <option class="opt" value="">Depan</option>
+                <option class="opt" value="">Tengah</option>
+                <option class="opt" value="">Belakang</option>
+            </select>
+            <label class="label">Pembayaran</label>
+            <select class="select" name="" id="">
+              <option class="opt" value="" hidden>Pilih Pembayaran</option>
+              <option class="opt" value="">Bank BRI</option>
+              <option class="opt" value="">Bank BNI</option>
+              <option class="opt" value="">Bank Mandiri</option>
+              <option class="opt" value="">Bank BCA</option>
+              <option class="opt" value="">Bank Syariah Indonesia</option>
+          </select>
+          </div>
+          <div style="text-align: center">
+            <button class="submit">SUBMIT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
